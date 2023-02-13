@@ -39,6 +39,27 @@
     %}
 
     {% style %}
+      /* font face */
+      @font-face {
+        font-family: "Rational Semi Bold";
+        src: url("{{ 'Rational-Font_Semi-Bold.woff2' | asset_url }}") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Rational Semi Bold";
+        src: url("{{ 'Rational-Font_Semi-Bold.ttf' | asset_url }}") format("truetype");
+      }
+
+      @font-face {
+        font-family: "Rational Semi Bold";
+        src: url("{{ 'Rational-Font_Semi-Bold.woff' | asset_url }}") format("woff");
+      }
+
+      @font-face {
+        font-family: "Rational Semi Bold";
+        src: url("{{ 'Rational-Font_Semi-Bold.otf' | asset_url }}") format("opentype");
+      }
+
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
